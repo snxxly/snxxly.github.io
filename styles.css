@@ -24,6 +24,7 @@ h2 {
 
 .project-gallery {
     display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
     justify-content: center;
     gap: 20px; /* расстояние между карточками */
 }
@@ -35,6 +36,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 200px; /* фиксированная ширина для карточек */
+    flex: 1 1 200px; /* карточки будут занимать минимум 200px */
 }
 
 .project-card:hover {
@@ -70,6 +72,18 @@ section {
     background-color: rgba(255, 255, 255, 0.8); /* полупрозрачный белый фон */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 600px) {
+    .project-gallery {
+        flex-direction: column; /* Вертикальное расположение карточек */
+        align-items: center; /* Центрирование карточек */
+    }
+
+    .project-card {
+        width: 90%; /* Ширина карточек на мобильных устройствах */
+    }
 }
 
 .footer {

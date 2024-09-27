@@ -11,41 +11,42 @@
 <body>
     <header>
         <img src="logo.png" alt="SunProject Logo" id="logo">
-        <h1>Welcome to SunProject</h1>
+        <h1 id="main-title">Welcome to SunProject</h1>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#donate">Donate</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#donate" class="nav-link">Donate</a></li>
             </ul>
         </nav>
+        <button id="language-toggle">Русский</button>
     </header>
 
     <section id="projects">
-        <h2>Our Projects</h2>
+        <h2 id="projects-title">Our Projects</h2>
         <div class="project-list">
             <!-- Add project details here -->
         </div>
     </section>
 
     <section id="team">
-        <h2>Meet the Team</h2>
+        <h2 id="team-title">Meet the Team</h2>
         <div class="team-list">
             <!-- Add team member profiles here -->
         </div>
     </section>
 
     <section id="blog">
-        <h2>Blog</h2>
+        <h2 id="blog-title">Blog</h2>
         <div class="blog-posts">
             <!-- Add blog posts here -->
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2 id="contact-title">Contact Us</h2>
         <form action="#" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -61,8 +62,8 @@
     </section>
 
     <section id="donate">
-        <h2>Support Us</h2>
-        <p>If you like what we do, consider supporting us!</p>
+        <h2 id="donate-title">Support Us</h2>
+        <p id="donate-text">If you like what we do, consider supporting us!</p>
         <button onclick="window.location.href='https://www.paypal.com'">Donate via PayPal</button>
     </section>
 

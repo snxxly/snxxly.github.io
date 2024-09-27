@@ -1,55 +1,22 @@
-
 body {
+    background-color: #87CEEB; /* Небесно-голубой */
+    color: #333333; /* Темно-серый для текста */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
-}
-
-header img#logo {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
     padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+h1 {
+    color: #FFCC00; /* Яркий желтый */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
 }
 
-footer p {
-    margin: 5px 0;
+.footer {
+    margin-top: 20px;
+    font-size: 0.8em;
 }
+
+/* Для цветовых блоков в разделе палитры */
+.color1 { background-color: #FFCC00; } /* Яркий желтый */
+.color2 { background-color: #FF9900; } /* Оранжевый */
+.color3 { background-color: #FFD700; } /* Золотистый */

@@ -6,17 +6,57 @@ body {
     padding: 20px;
 }
 
+header {
+    background-color: #FFCC00; /* Яркий желтый */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 h1 {
+    color: #FF9900; /* Оранжевый */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
     color: #FFCC00; /* Яркий желтый */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #333;
+}
+
+.team-member {
+    background-color: #FFD700; /* Золотистый */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.donate-button {
+    background-color: #FF9900; /* Оранжевый */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #FFCC00; /* Яркий желтый при наведении */
 }
 
 .footer {
     margin-top: 20px;
     font-size: 0.8em;
 }
-
-/* Для цветовых блоков в разделе палитры */
-.color1 { background-color: #FFCC00; } /* Яркий желтый */
-.color2 { background-color: #FF9900; } /* Оранжевый */
-.color3 { background-color: #FFD700; } /* Золотистый */

@@ -1,92 +1,91 @@
+/* Основные стили */
 body {
-    background: linear-gradient(to bottom right, #87CEEB, #FFCC00);
-    color: #333;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ffcc00; /* Цвет фона заголовка */
     text-align: center;
     padding: 20px;
 }
 
-header {
-    background-color: #FFCC00;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-h1 {
-    color: #FF9900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
-    color: #FFCC00;
+    font-size: 2em;
+    border-bottom: 2px solid #ffcc00; /* Подчеркивание заголовка */
+    padding-bottom: 10px;
 }
 
 .project-gallery {
     display: flex;
-    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
-    justify-content: center;
-    gap: 20px; /* расстояние между карточками */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project-card {
-    background-color: #FFFFFF; /* белый фон для карточки */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width: 200px; /* фиксированная ширина для карточек */
-    flex: 1 1 200px; /* карточки будут занимать минимум 200px */
-}
-
-.project-card:hover {
-    transform: translateY(-5px); /* эффект при наведении */
+    background-color: #fff; /* Цвет фона карточки проекта */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* 3 карточки в строке */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .team-member {
-    background-color: #FFD700;
+    background-color: #eaeaea; /* Цвет фона для членов команды */
     padding: 10px;
     border-radius: 5px;
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
 .donate-button {
-    background-color: #FF9900;
+    display: inline-block;
+    background-color: #28a745; /* Цвет фона кнопки */
     color: white;
     padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.1em; /* увеличенный шрифт */
-    transition: background-color 0.3s, transform 0.3s; /* анимации */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .donate-button:hover {
-    background-color: #FFCC00; /* яркий желтый при наведении */
-    transform: scale(1.05); /* эффект увеличения */
-}
-
-section {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* полупрозрачный белый фон */
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Медиа-запрос для мобильных устройств */
-@media (max-width: 600px) {
-    .project-gallery {
-        flex-direction: column; /* Вертикальное расположение карточек */
-        align-items: center; /* Центрирование карточек */
-    }
-
-    .project-card {
-        width: 90%; /* Ширина карточек на мобильных устройствах */
-    }
+    background-color: #218838; /* Цвет кнопки при наведении */
 }
 
 .footer {
+    text-align: center;
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+/* Стили для изображения Patreon */
+.patreon-image {
+    width: 100%; /* Установить ширину изображения */
+    max-width: 400px; /* Максимальная ширина для десктопа */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(100% - 20px); /* Одна карточка на мобильном */
+    }
 }

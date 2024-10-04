@@ -3,12 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9a602; /* Цвет фона для темной темы */
+    background-color: #121212; /* Цвет фона для темной темы */
     color: #e0e0e0; /* Цвет текста */
 }
 
 header {
-    background-color: #ffcc00; /* Цвет фона заголовка */
+    background-color: #f9a602; /* Цвет фона заголовка */
     text-align: center;
     padding: 20px;
 }

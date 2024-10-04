@@ -1,0 +1,48 @@
+/* Blog styles */
+body {
+    background-color: #121212; /* Цвет фона для темной темы */
+    color: #e0e0e0; /* Цвет текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт */
+}
+
+.blog-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    background-color: #1e1e1e; /* Цвет фона карточек */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Увеличенная тень для контраста */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ограничение максимальной ширины */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.blog-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ff6600; /* Цвет заголовка */
+}
+
+.blog-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    background-color: #ff6600; /* Цвет фона кнопки */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.blog-card a:hover {
+    background-color: #cc5200; /* Цвет фона кнопки при наведении */
+}

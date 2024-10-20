@@ -49,10 +49,54 @@ h2 {
 }
 
 .team-member {
-    background-color: #2e2e2e; /* Цвет фона для членов команды */
+    background-color: #1e1e1e; /* Цвет фона для членов команды */
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+/* Стили для логотипов соцсетей и текста */
+.social-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-logo {
+    width: 30px; /* Размер логотипов соцсетей */
+    height: 30px;
+    margin-right: 8px;
+}
+
+.extra-info {
+    max-height: 0; /* По умолчанию скрыта */
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* Анимация высоты и прозрачности */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member.open .extra-info {
+    max-height: 150px; /* Задай нужную высоту для раскрытия */
+    opacity: 1;
+}
+
+/* Анимация для кнопки */
+button.toggle-info {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 3px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button.toggle-info:hover {
+    background-color: #ffdd33;
 }
 
 .donate-button {

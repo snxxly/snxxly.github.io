@@ -1,10 +1,18 @@
+const toggleButtons = document.querySelectorAll('.toggle-info');
 
-// No language switching needed; all content is in English.
+toggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const member = this.parentElement;
+        const extraInfo = member.querySelector('.extra-info');
 
-// Update content based on the selected language (only English here)
-function updateContent() {
-    // No updates needed since everything is in English
-}
-
-// Initial content update (nothing to change)
-updateContent();
+        member.classList.toggle('open');
+        
+        if (member.classList.contains('open')) {
+            this.textContent = 'Show Less';
+            extraInfo.style.maxHeight = extraInfo.scrollHeight + 'px'; // Устанавливаем высоту для раскрытия
+        } else {
+            this.textContent = 'Show More';
+            extraInfo.style.maxHeight = '0'; // Сворачиваем карточку
+        }
+    });
+});
